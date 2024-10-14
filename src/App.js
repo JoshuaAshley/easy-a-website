@@ -90,7 +90,7 @@ const App = () => {
 
       <p className="small-text">
         For help, email:
-        <a href="mailto:proactive255@gmail.com" className="email-link"> proactive255@gmail.com</a>.
+        <a href="mailto:teamproactive255@gmail.com" className="email-link"> teamproactive255@gmail.com</a>.
       </p>
 
     </div>
