@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(20deg, #151515 0%, #065BFF 50%, #151515 100%); /* More black with hints of blue */
+  background: linear-gradient(20deg, #151515 0%, #065BFF 50%, #151515 100%);
   color: white;
   text-align: center;
 }
@@ -50,7 +50,7 @@
 }
 
 .delete-button {
-  background-color: rgb(233, 51, 51); /* Easy A blue */
+  background-color: rgb(233, 51, 51);
   color: white;
   font-size: 1.2rem;
   padding: 10px 20px;
@@ -62,25 +62,25 @@
 }
 
 .delete-button:hover {
-  background-color: rgba(255, 0, 0, 0.74); /* Darker shade for hover effect */
+  background-color: rgba(255, 0, 0, 0.74);
 }
 
-.small-text{
+.small-text {
   font-size: 12px;
 }
 
 /* Common styles for messages */
 .message {
-  margin-top: 10px; /* Spacing above the message */
-  padding: 10px; /* Padding for the message box */
-  border-radius: 5px; /* Rounded corners */
-  font-weight: bold; /* Make the text bold */
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 /* Style for error messages */
 .error-message {
   margin-top: 30px;
-  color: rgb(255, 142, 142); /* Dark red text */
+  color: rgb(255, 142, 142);
 }
 
 /* Style for success messages */
@@ -90,12 +90,39 @@
 }
 
 .email-link {
-  color: #44C4FF; /* Change to your desired color */
-  text-decoration: underline; /* Underline to indicate it's a link */
-  cursor: pointer; /* Show pointer cursor on hover */
+  color: #44C4FF;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .email-link:hover {
-  color: #0056b3; /* Darker color on hover */
-  text-decoration: none; /* Remove underline on hover if desired */
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* Media queries for mobile scaling */
+@media (max-width: 768px) {
+  .delete-account-container h1 {
+    font-size: 2rem; /* Scale down title */
+  }
+
+  .delete-account-container p {
+    font-size: 1rem; /* Scale down paragraph */
+  }
+
+  .input-field,
+  .input-area {
+    width: 90%; /* Adjust input width for mobile */
+    max-width: 300px; /* Reduce max width for mobile */
+    font-size: 0.9rem; /* Scale down font size */
+  }
+
+  .delete-button {
+    font-size: 1rem; /* Scale down button font */
+    padding: 8px 16px; /* Adjust padding for button */
+  }
+
+  .small-text {
+    font-size: 10px; /* Scale down small text */
+  }
 }
